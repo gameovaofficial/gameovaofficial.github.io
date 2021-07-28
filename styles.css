@@ -1,5 +1,10 @@
+*::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
 body {
-    color: #415161;
+    color: #03216D;
 }
 
 footer {
@@ -8,7 +13,7 @@ footer {
     align-items: center;
     justify-content: flex-end;
     color: white;
-    background-color: #415161;
+    background-color: #03216D;
 }
 
 footer #top {
@@ -58,6 +63,7 @@ footer #bottom>p {
     font-family: 'Manrope', Helvetica;
     font-size: 14px;
     line-height: 24px;
+    color: white;
 }
 
 footer #contact-container {
@@ -74,13 +80,13 @@ footer #contact-container>address {
 }
 
 footer #contact-container>address>a {
-    color: white;
     display: flex;
     font-family: Helvetica;
     font-weight: lighter;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
+    color: white;
 }
 
 footer #contact-container>address>a>img {
@@ -123,6 +129,7 @@ h4 {
 p {
     font-size: 18px;
     font-family: Helvetica;
+    color: rgba(0, 0, 0, 0.808);
 }
 
 button:focus {
@@ -140,21 +147,20 @@ a:hover {
 
 /* navbar CSS */
 .navbar-nav .nav-item .nav-link {
-    color: #415161;
     font-size: 15px;
     line-height: 20px;
     font-family: Helvetica;
+    color: #415161;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #03216D;
 }
 
 .navbar .navbar-brand {
-    color: #415161;
     font-family: 'Poppins', Helvetica;
     font-weight: 800;
     line-height: 96px;
-}
-
-.navbar .navbar-brand:hover {
-    color: #415161;
 }
 
 .social-container {
@@ -182,8 +188,19 @@ a:hover {
 #intro {
     display: flex;
     justify-content: center;
-    background: rgb(224, 224, 224);
-    background: radial-gradient(circle, rgba(239, 239, 239, 1) 0%, rgba(210, 234, 252, 1) 50%, rgba(239, 239, 239, 1) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("images/soccer.png");
+
+    /* background: rgb(224, 224, 224);
+    background: radial-gradient(circle, rgba(239, 239, 239, 1) 0%, rgba(210, 234, 252, 1) 50%, rgba(239, 239, 239, 1) 100%); */
+
+    /* background: rgb(255,255,255);
+    background: linear-gradient(156deg, rgba(255,255,255,1) 0%, rgba(189,209,228,1) 48%, rgba(53,67,80,1) 100%); */
+
+    /* background: rgb(255,255,255);
+    background: linear-gradient(156deg, rgba(255,255,255,1) 0%, rgba(94,94,94,1) 100%); */
 }
 
 #left-container {
@@ -206,6 +223,7 @@ a:hover {
     width: 545.81px;
     line-height: 36px;
     margin: 8px 0 16px 0;
+    color: white;
     /* background-color: peachpuff; */
 }
 
@@ -373,11 +391,13 @@ a:hover {
 }
 
 .review-container>h4 {
+    color: #03216D;
     line-height: 28px;
     text-align: center;
 }
 
 .review-container>p {
+    color: rgba(0, 0, 0, 0.808);
     width: 508px;
     line-height: 32px;
     text-align: center;
@@ -446,8 +466,8 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgb(210, 234, 252);
-    background: linear-gradient(0deg, rgba(210, 234, 252, 1) 0%, rgba(239, 239, 239, 1) 75%);
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(183,187,200,1) 100%);
 }
 
 #touch>h2 {
@@ -467,7 +487,7 @@ a:hover {
     line-height: 36px;
     cursor: pointer;
     margin-bottom: 90px;
-    background-color: #415161;
+    background-color: #03216D;
 }
 
 @media (max-width: 1380px) {
@@ -522,6 +542,8 @@ a:hover {
 
     #left-container>h1 {
         width: 90vw;
+        border-radius: 8px;
+        background-color: #d8d8d879;
     }
 
     #left-container>p {
