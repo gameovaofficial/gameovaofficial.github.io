@@ -1,10 +1,15 @@
+*::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
 body {
-    color: #415161;
+    color: #03216D;
 }
 
 main {
-    background: rgb(224, 224, 224);
-    background: linear-gradient(90deg, rgba(239, 239, 239, 1) 11%, rgba(217, 239, 251, 1) 50%, rgba(239, 239, 239, 1) 90%);
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(183,187,200,1) 50%, rgba(255,255,255,1) 100%);
 }
 
 footer {
@@ -13,7 +18,7 @@ footer {
     align-items: center;
     justify-content: flex-end;
     color: white;
-    background-color: #415161;
+    background-color: #03216D;
 }
 
 footer #top {
@@ -63,6 +68,7 @@ footer #bottom>p {
     font-family: 'Manrope', Helvetica;
     font-size: 14px;
     line-height: 24px;
+    color: white;
 }
 
 footer #contact-container {
@@ -123,6 +129,7 @@ h3 {
 p {
     font-size: 18px;
     font-family: Helvetica;
+    color: rgba(0, 0, 0, 0.808);
 }
 
 button:focus {
@@ -140,21 +147,20 @@ a:hover {
 
 /* navbar CSS */
 .navbar-nav .nav-item .nav-link {
-    color: #415161;
     font-size: 15px;
     line-height: 20px;
     font-family: Helvetica;
+    color: #415161;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #03216D;
 }
 
 .navbar .navbar-brand {
-    color: #415161;
     font-family: 'Poppins', Helvetica;
     font-weight: 800;
     line-height: 96px;
-}
-
-.navbar .navbar-brand:hover {
-    color: #415161;
 }
 
 .social-container {
@@ -229,12 +235,12 @@ a:hover {
 }
 
 #team>img {
-    border: 3px solid #000000;
+    border: 1px solid black;
     box-sizing: border-box;
     border-radius: 20px;
     margin: 40px 0 6px 0;
-    box-shadow: 10px 10px #415161,
-        10px 10px 0 3px black;
+    box-shadow: 10px 10px transparent,
+        10px 10px 0 1px black;
 }
 
 #team>h3 {
@@ -322,7 +328,7 @@ a:hover {
     line-height: 36px;
     cursor: pointer;
     margin-bottom: 90px;
-    background-color: #415161;
+    background-color: #03216D;
 }
 
 /* responsive CSS */
